@@ -1,0 +1,104 @@
+.about-section {
+  margin-top: 30px;
+}
+.aboutLogo {
+  width: 20px;
+  height: auto;
+}
+.about-section h2 {
+  font-size: 2.5rem;
+  font-size: 2.5rem;
+  font-family: "Lucida Handwriting";
+  margin-bottom: 20px;
+}
+.about-section p {
+  margin-bottom: 20px;
+}
+.about-slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin-left: 30%;
+}
+.mySlides {
+  display: none;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.mySlides img {
+  height: 50vh;
+  width: 70vh;
+  border-radius: 10%;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+  .about-section {
+    margin-top: 30px;
+  }
+  .aboutLogo {
+    width: 20px;
+    height: auto;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    font-size: 2.5rem;
+    font-family: "Lucida Handwriting";
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    margin-bottom: 20px;
+  }
+  .about-slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin-left: 30%;
+  }
+  .mySlides {
+    display: none;
+  }
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  .mySlides img {
+    height: 50vh;
+    width: 70vh;
+    border-radius: 10%;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

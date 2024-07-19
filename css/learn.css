@@ -1,0 +1,122 @@
+.learn-title {
+  font-size: 1.5rem;
+  font-family: "Lucida Handwriting";
+}
+.content-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.material-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+}
+.material-card:hover {
+  transform: scaleX(105%);
+  transform: scaleY(105%);
+}
+
+.material-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.material-card p {
+  margin-bottom: 15px;
+}
+
+.material-card a {
+  display: block;
+  text-align: center;
+  background-color: #821c02;
+  color: #fff;
+  padding: 8px 0;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.material-card a:hover {
+  background-color: #330000;
+}
+#mat1 {
+  border: 2px solid aqua;
+}
+#mat2 {
+  border: 2px solid rgb(255, 187, 0);
+}
+#mat3 {
+  border: 2px solid rgb(255, 0, 242);
+}
+#mat4 {
+  border: 2px solid rgb(255, 0, 0);
+}
+#mat5 {
+  border: 2px solid rgb(34, 255, 0);
+}
+#mat6 {
+  border: 2px solid rgb(255, 251, 0);
+}
+@media only screen and (max-width: 1200px) {
+  .learn-title {
+    font-size: 1.5rem;
+    font-family: "Lucida Handwriting";
+  }
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .material-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .material-card:hover {
+    transform: scaleX(105%);
+    transform: scaleY(105%);
+  }
+
+  .material-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .material-card p {
+    margin-bottom: 15px;
+  }
+
+  .material-card a {
+    display: block;
+    text-align: center;
+    background-color: #821c02;
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  .material-card a:hover {
+    background-color: #330000;
+  }
+  #mat1 {
+    border: 2px solid aqua;
+  }
+  #mat2 {
+    border: 2px solid rgb(255, 187, 0);
+  }
+  #mat3 {
+    border: 2px solid rgb(255, 0, 242);
+  }
+  #mat4 {
+    border: 2px solid rgb(255, 0, 0);
+  }
+  #mat5 {
+    border: 2px solid rgb(34, 255, 0);
+  }
+  #mat6 {
+    border: 2px solid rgb(255, 251, 0);
+  }
+}

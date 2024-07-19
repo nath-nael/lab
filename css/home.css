@@ -1,0 +1,582 @@
+* {
+  box-sizing: border-box;
+}
+.main-section {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.tagline {
+  padding: 10px;
+  flex: 1;
+}
+.tagline h2 {
+  font-family: "Lucida Handwriting";
+  animation: textBlink 1s infinite alternate;
+}
+@keyframes textBlink {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0);
+  }
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.mySlides img {
+  height: 50vh;
+  width: 80vh;
+  border-radius: 10%;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.tagline-back {
+  display: inline-block;
+  transition-duration: 500ms;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid rgb(255, 255, 255);
+  animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
+}
+.tagline-back i p::first-line {
+  background-color: rgb(45, 0, 55);
+}
+.tagline-back2 i p::first-line {
+  background-color: rgb(45, 0, 55);
+}
+.tagline h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.tagline p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+.features-section {
+  padding-top: 80px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.features-title {
+  font-family: "Lucida Handwriting";
+}
+
+.features-title {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.feature-card {
+  margin-top: 20px;
+  width: calc(50% - 40px);
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+.feature-card img {
+  margin: auto;
+  position: relative;
+  height: 50%;
+  width: 50%;
+  display: block;
+}
+.feature-card h3 {
+  color: #000000;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #666;
+}
+.feature-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.best-package-section {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.best-package-title {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-family: "Lucida Handwriting";
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+
+  animation: textBlink 2s infinite alternate;
+}
+.package {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.package-image {
+  width: 300px; /* Adjust image width */
+  margin-right: 20px; /* Adjust spacing between image and text */
+  border-radius: 20%;
+  animation: scaleXAnimation 0.5s infinite alternate,
+    shadowBlink 0.5s infinite alternate;
+}
+@keyframes scaleXAnimation {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(1.05);
+  }
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1.05);
+  }
+}
+@keyframes shadowBlink {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0);
+  }
+}
+.package-details {
+  flex: 1;
+  text-align: left;
+  margin: 20px;
+}
+.package-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.package-details p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+.package-button {
+  background-color: #821c02;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.package-button:hover {
+  background-color: #330000;
+}
+.package-button a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.faq-section {
+  text-align: center;
+  margin-top: 50px;
+}
+.faq-title {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-family: "Lucida Handwriting";
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+.faq-question button {
+  background-color: #821c02;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.faq-show {
+  background-color: #821c02;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  float: right;
+}
+.faq-show:hover {
+  background-color: #330000;
+}
+
+.faq-question:hover {
+  background-color: #333;
+}
+
+.faq-answer {
+  display: none;
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-answer p {
+  font-size: 1rem;
+  color: #3d3d3d;
+}
+@media only screen and (max-width: 1200px) {
+  * {
+    box-sizing: border-box;
+  }
+  .main-section {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+
+  .tagline {
+    padding: 10px;
+    flex: 1;
+  }
+  .tagline h2 {
+    font-family: "Lucida Handwriting";
+    animation: textBlink 1s infinite alternate;
+  }
+  @keyframes textBlink {
+    0% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0);
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0);
+    }
+  }
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .mySlides {
+    display: none;
+  }
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  .mySlides img {
+    height: 50vh;
+    width: 80vh;
+    border-radius: 10%;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .tagline-back {
+    display: inline-block;
+    transition-duration: 500ms;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid rgb(255, 255, 255);
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(255, 255, 255);
+    }
+  }
+  .tagline-back i p::first-line {
+    background-color: rgb(45, 0, 55);
+  }
+  .tagline-back2 i p::first-line {
+    background-color: rgb(45, 0, 55);
+  }
+  .tagline h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .tagline p {
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  .features-section {
+    padding-top: 80px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .features-title {
+    font-family: "Lucida Handwriting";
+  }
+
+  .features-title {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+
+  .feature-card {
+    margin-top: 20px;
+    width: calc(50% - 40px);
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .feature-card img {
+    margin: auto;
+    position: relative;
+    height: 50%;
+    width: 50%;
+    display: block;
+  }
+  .feature-card h3 {
+    color: #000000;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .feature-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  .feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .best-package-section {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .best-package-title {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-family: "Lucida Handwriting";
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+
+    animation: textBlink 2s infinite alternate;
+  }
+  .package {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  .package-image {
+    width: 300px; /* Adjust image width */
+    margin-right: 20px; /* Adjust spacing between image and text */
+    border-radius: 20%;
+    animation: scaleXAnimation 0.5s infinite alternate,
+      shadowBlink 0.5s infinite alternate;
+  }
+  @keyframes scaleXAnimation {
+    0% {
+      transform: scaleX(1);
+    }
+    100% {
+      transform: scaleX(1.05);
+    }
+    0% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(1.05);
+    }
+  }
+  @keyframes shadowBlink {
+    0% {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0);
+    }
+  }
+  .package-details {
+    flex: 1;
+    text-align: left;
+    margin: 20px;
+  }
+  .package-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .package-details p {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  .package-button {
+    background-color: #821c02;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .package-button:hover {
+    background-color: #330000;
+  }
+  .package-button a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .faq-section {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .faq-title {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-family: "Lucida Handwriting";
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+
+  .faq-item {
+    margin-bottom: 20px;
+  }
+
+  .faq-question {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  .faq-question button {
+    background-color: #821c02;
+    color: #ffffff;
+    font-size: 1.2rem;
+  }
+
+  .faq-show {
+    background-color: #821c02;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+  }
+  .faq-show:hover {
+    background-color: #330000;
+  }
+
+  .faq-question:hover {
+    background-color: #333;
+  }
+
+  .faq-answer {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .faq-answer p {
+    font-size: 1rem;
+    color: #3d3d3d;
+  }
+}

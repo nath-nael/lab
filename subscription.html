@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/subscription.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="icon" href="images/logo.jpg" />
+  </head>
+  <audio control autoplay src="music/background-music.mp3"></audio>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="logo">
+          <img src="images/logo.jpg" alt="Jenius Academy Logo" />
+          <a href="home.html">Jenius Academy</a>
+        </div>
+        <ul class="menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="testimony.html">Testimony</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+          <li class="register-button"><a href="register.html">Register</a></li>
+        </ul>
+        <a href="#" class="back-to-top">^</a>
+      </nav>
+    </header>
+    <br />
+    <li class="side-button">
+      <input type="checkbox" name="" id="arrow" class="button_slide" />
+      <label for="arrow"><img src="images/arrow-edit.png" alt="" /></label>
+      <div class="control">
+        <div class="component">
+          <div class="components">
+            <a href="home.html">Home</a>
+          </div>
+
+          <div class="components">
+            <a href="about.html">About</a>
+          </div>
+
+          <div class="components">
+            <a href="learn.html">Learn</a>
+          </div>
+
+          <div class="components">
+            <a href="testimony.html">Testimony</a>
+          </div>
+
+          <div class="components">
+            <a href="subscription.html">Subscription</a>
+          </div>
+
+          <div class="components">
+            <a href="register.html">Register</a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <div class="container">
+      <section class="subscription-section">
+        <h2 class="subscription-title">SUBSCRIPTIONS</h2>
+        <br />
+        <div class="subscription-cards">
+          <div class="subscription-card" onclick="showDetails(1)" id="sub1">
+            <img class="subscription-img" src="images/basic.jpg" alt="" />
+            <h3>Beginner</h3>
+            <h6>Double click for details</h6>
+            <div class="details" id="details1">
+              <p><strong>Duration:</strong> 12 month</p>
+              <p><strong>Access:</strong> 
+                <ul>
+                <li>Limited access to live streaming session</li>
+            </ul> 
+              </p>
+              <p>
+                <strong>Features:</strong> 
+                <ul>
+                  <li>Limited access to live streaming session</li>
+                  <li>Consultation via email</li>
+              </ul> 
+              </p>
+              <p><strong>Price:</strong> $200/year</p>
+              <a href="register.html" class="">Enroll Now</a>
+
+            </div>
+          </div>
+          <br />
+          <div class="subscription-card" onclick="showDetails(2)" id="sub2">
+            <img
+              class="subscription-img"
+              src="images/intermediate.jpg"
+              alt=""
+            />
+            <h3>Elementary</h3>
+            <h6>Double click for details</h6>
+            <div class="details" id="details2">
+              <p><strong>Duration:</strong> 12 month</p>
+              <p>
+                <strong>Access:</strong> 
+                <ul>
+                  <li>Video Learning</li>
+                  <li>Online Material</li>
+                  <li>Discussion Forum</li>
+              </ul> 
+              </p>
+              <p>
+                <strong>Features:</strong> 
+                <ul>
+                  <li>Regular live streaming session</li>
+                  <li>Consultation via chat</li>
+              </ul> 
+              </p>
+              <p><strong>Price:</strong> $350/year</p>
+              <a href="register.html" class="">Enroll Now</a>
+
+            </div>
+          </div>
+          <!-- </div> -->
+          <br />
+          <!-- <div class="subscription-cards"> -->
+          <div class="subscription-card" onclick="showDetails(3)" id="sub3">
+            <img class="subscription-img" src="images/premium.jpg" alt="" />
+            <h3>Intermediate</h3>
+            <h6>Double click for details</h6>
+            <div class="details" id="details3">
+              <p><strong>Duration:</strong> 12 month</p>
+              <p>
+                <strong>Access:</strong> 
+                <ul>
+                  <li>All Elementary Package Features</li>
+              </ul> 
+              </p>
+              <p>
+                <strong>Features:</strong> 
+                <ul>
+                  <li>Personalized Tutoring Session (Limited per Month)</li>
+                  <li>Advanced Practice Problems</li>
+              </ul> 
+              </p>
+              <p><strong>Price:</strong> $500/year</p>
+              <a href="register.html" class="">Enroll Now</a>
+
+            </div>
+          </div>
+          <br />
+          <div class="subscription-card" onclick="showDetails(4)" id="sub4">
+            <img class="subscription-img" src="images/advanced.jpg" alt="" />
+            <h3>Advanced</h3>
+            <h6>Double click for details</h6>
+            <div class="details" id="details4">
+              <p><strong>Duration:</strong> 12 month</p>
+              <p>
+                <strong>Access:</strong> 
+                <ul>
+                  <li>All Intermediate Package Features</li>
+              </ul> 
+              </p>
+              <p>
+                <strong>Features:</strong> 
+                <ul>
+                  <li>Extended Personalized Tutoring Session</li>
+                  <li>Challenge Exams and Practice Materials</li>
+              </ul> 
+              </p>
+              <p><strong>Price:</strong> $700/year</p>
+              <a href="register.html" class="">Enroll Now</a>
+
+            </div>
+          </div>
+          <br />
+          <div class="subscription-card" onclick="showDetails(5)" id="sub5">
+            <img class="subscription-img" src="images/pro.jpg" alt="" />
+            <h3>Proficient</h3>
+            <h6>Double click for details</h6>
+            <div class="details" id="details5">
+              <p><strong>Duration:</strong> 12 month</p>
+              <p>
+                <strong>Access:</strong> 
+                <ul>
+                  <li>All Advanced Package Features</li>
+              </ul> 
+              </p>
+              <p>
+                <strong>Features:</strong> 
+                <ul>
+                  <li>Unlimited Personalized Tutoring</li>
+                  <li>Exclusive Masterclasses</li>
+                  <li>Career Guidance Resources</li>
+              </ul> 
+              </p>
+              <p><strong>Price:</strong> $1.000/year</p>
+              <a href="register.html" class="">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <br />
+
+    <footer>
+      <div class="footer-container">
+        <ul class="quick-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="testimony.html">Testimony</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+        <div class="company-info">
+          <div class="logo">
+            <img src="images/logo.jpg" alt="Jenius Academy Logo" />
+            <a href="home.html">Jenius Academy</a>
+          </div>
+          <center>
+            <p>&copy; 2024 Jenius Academy. <br />All rights reserved.</p>
+          </center>
+        </div>
+        <div class="contact-info">
+          <p><strong>Get in touch with us:</strong></p>
+          <p>
+            <a href="mailto:info@jeniusacademy.com"
+              ><em>info@jeniusacademy.com</em></a
+            >
+          </p>
+          <p>
+            <a href="tel:+1234567890"><em>+1234567890</em></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/backtotop.js"></script>
+    <script src="js/package.js"></script>
+
+  </body>
+</html>

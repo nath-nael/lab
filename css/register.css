@@ -1,0 +1,78 @@
+/* register */
+.container {
+  margin-top: 30px;
+  border: #fff solid;
+  background-color: #f8bb5f;
+  width: 30%;
+  height: 70%;
+  padding: 20px;
+}
+.registration-section {
+  text-align: center;
+}
+
+.registration-title {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-family: "Lucida Handwriting";
+  text-shadow: 0 0 20px rgba(115, 61, 0, 0.8);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+span {
+  display: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #460101;
+  color: #fff;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.8); /* Slightly opaque input background */
+}
+
+button[type="submit"] {
+  background-color: #821c02;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.regis-button:hover {
+  background-color: #330000;
+}
+.form-group label {
+  color: black;
+}
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
+.package {
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+.package label {
+  margin-left: 0px;
+  float: left;
+  font-weight: lighter;
+}
+.package {
+  width: 50%;
+  text-align: left;
+}

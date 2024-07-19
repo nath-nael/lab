@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="icon" href="images/logo.jpg" />
+  </head>
+  <audio control autoplay src="music/background-music.mp3"></audio>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="logo">
+          <img src="images/logo.jpg" alt="Jenius Academy Logo" />
+          <a href="home.html">Jenius Academy</a>
+        </div>
+        <ul class="menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="testimony.html">Testimony</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+          <li class="register-button">
+            <a href="register.html">Register</a>
+          </li>
+        </ul>
+        <a href="#" class="back-to-top">^</a>
+      </nav>
+    </header>
+    <br />
+    <li class="side-button">
+      <input type="checkbox" name="" id="arrow" class="button_slide" />
+      <label for="arrow"><img src="images/arrow-edit.png" alt="" /></label>
+      <div class="control">
+        <div class="component">
+          <div class="components">
+            <a href="home.html">Home</a>
+          </div>
+
+          <div class="components">
+            <a href="about.html">About</a>
+          </div>
+
+          <div class="components">
+            <a href="learn.html">Learn</a>
+          </div>
+
+          <div class="components">
+            <a href="testimony.html">Testimony</a>
+          </div>
+
+          <div class="components">
+            <a href="subscription.html">Subscription</a>
+          </div>
+
+          <div class="components">
+            <a href="register.html">Register</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <br /><br /><br />
+    <center><h2 class="registration-title">Jenius Account</h2></center>
+    <div class="container" id="regis-con">
+      <section class="registration-section">
+        <form id="registration-form" onsubmit="return validates()">
+          <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" />
+            <span class="error" id="error-first-name"
+              >First name is required</span
+            >
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" />
+            <span class="error" id="error-last-name"
+              >Last name is required</span
+            >
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+            <span class="error" id="error-email">Email is required</span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" />
+            <span class="error" id="error-phone"
+              >Phone number is required (12 digits)</span
+            >
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" />
+            <span class="error" id="error-password">Password is required</span>
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+            />
+            <span class="error" id="error-confirm-password"
+              >Confirm password is required</span
+            >
+          </div>
+          <div class="form-group">
+            <label for="package">Package: </label>
+            <div class="package">
+              <input type="radio" id="Beginner" name="package" />
+              <label for="beginner">Beginner</label>
+              <input type="radio" id="Elementary" name="package" />
+              <label for="Elementary">Elementary</label>
+              <input type="radio" id="Intermediate" name="package" />
+              <label for="Intermediate">Intermediate</label>
+              <input type="radio" id="Advanced" name="package" />
+              <label for="Advanced">Advanced</label>
+              <input type="radio" id="Proficient" name="package" />
+              <label for="Proficient">Proficient</label>
+            </div>
+            <span class="error" id="error-package">Choose a package</span>
+          </div>
+          <button class="regis-button" type="submit">Register</button>
+        </form>
+      </section>
+    </div>
+    <br />
+
+    <footer>
+      <div class="footer-container">
+        <ul class="quick-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="testimony.html">Testimony</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+        <div class="company-info">
+          <div class="logo">
+            <img src="images/logo.jpg" alt="Jenius Academy Logo" />
+            <a href="home.html">Jenius Academy</a>
+          </div>
+          <center>
+            <p>&copy; 2024 Jenius Academy. <br />All rights reserved.</p>
+          </center>
+        </div>
+        <div class="contact-info">
+          <p><strong>Get in touch with us:</strong></p>
+          <p>
+            <a href="mailto:info@jeniusacademy.com"
+              ><em>info@jeniusacademy.com</em></a
+            >
+          </p>
+          <p>
+            <a href="tel:+1234567890"><em>+1234567890</em></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/backtotop.js"></script>
+    <script src="js/register.js"></script>
+  </body>
+</html>

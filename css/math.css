@@ -1,0 +1,47 @@
+.math-title {
+  font-size: 1.5rem;
+  font-family: "Lucida Handwriting";
+}
+.math-card {
+  margin-bottom: 20px;
+  border: rgb(255, 255, 255) solid;
+  border-color: aquamarine;
+  border-radius: 5%;
+  padding: 10px;
+  background-color: rgb(43, 27, 0);
+}
+
+.math-card iframe {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  border-radius: 10%;
+}
+
+.math-details {
+  text-align: center;
+  width: 100%;
+}
+
+.math-details h3 {
+  margin-bottom: 10px;
+}
+.math-details ol {
+  margin-left: 40px;
+}
+.math-details i {
+  margin-left: 40px;
+}
+.math-button a {
+  display: block;
+  text-align: center;
+  width: 50%;
+  background-color: #821c02;
+  color: #fff;
+  padding: 8px 0;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.math-button a:hover {
+  background-color: #330000;
+}
